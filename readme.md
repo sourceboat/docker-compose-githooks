@@ -9,6 +9,34 @@
 Easily manage [Git Hooks](https://git-scm.com/book/de/v1/Git-individuell-einrichten-Git-Hooks)
 in a [Docker Compose](https://docs.docker.com/compose/) setup.
 
+## Usage
+
+Add a new service to your  `.docker-compose.yml` file:
+
+```yml
+version: '3.7'
+services:
+  
+  // ...
+  
+  githooks:
+    image: sourceboat/docker-compose-githooks:stable
+    volumes:
+      - ./.git:/tmp/.git
+      - ./.githooks:/tmp/.githooks
+```
+
+Now you can manage and version control your Git Hooks in the `.githooks` directory of your repository.
+Everytime you run `docker-compose up` the `githooks` service will create symlinks in `.git/hooks` to all files found in the `.githooks` directory.
+
+For example you can create a `.githooks/pre-commit` file to run your linters inside your running containers:
+
+```sh
+#!/bin/sh
+echo 'running pre-commit hook...'
+docker-compose exec -T app yarn lint
+```
+
 ## Changelog
 
 Check [releases](https://github.com/sourceboat/docker-compose-githooks/releases) for all notable changes.
