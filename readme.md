@@ -16,7 +16,7 @@ Check [releases](https://github.com/sourceboat/docker-compose-githooks/releases)
 ## Credits
 
 - [Phil-Bastian Berndt](https://github.com/pehbehbeh)
-- [All Contributors](https://github.com/sourceboat/deploy/graphs/contributors)
+- [All Contributors](https://github.com/sourceboat/docker-compose-githooks/graphs/contributors)
 
 ## License
 
