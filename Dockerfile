@@ -1,3 +1,3 @@
-FROM busybox:1.29.3
+FROM busybox:1.31.0
 
 ENTRYPOINT sh -c "cd /tmp/.githooks && ls | xargs chmod +x && cd /tmp/.git/hooks && find ../../.githooks -type f -exec ln -sf {} /tmp/.git/hooks/ \; && echo 'githooks installed'"
