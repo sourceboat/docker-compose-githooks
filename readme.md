@@ -43,6 +43,7 @@ Check [releases](https://github.com/sourceboat/docker-compose-githooks/releases)
 
 ## Credits
 
+- This project is based on [an article by Aurélien Hervé](https://hackernoon.com/using-git-hooks-in-a-dockerized-environment-55372c40815f).
 - [Phil-Bastian Berndt](https://github.com/pehbehbeh)
 - [All Contributors](https://github.com/sourceboat/docker-compose-githooks/graphs/contributors)
 
