@@ -1,4 +1,4 @@
-MIT License
+# MIT License
 
 Copyright (c) Sourceboat GmbH & Co. KG  <info@sourceboat.com>
 
