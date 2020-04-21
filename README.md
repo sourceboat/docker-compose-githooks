@@ -20,7 +20,7 @@ services:
   // ...
   
   githooks:
-    image: sourceboat/docker-compose-githooks:stable
+    image: sourceboat/docker-compose-githooks:latest
     volumes:
       - ./.git:/tmp/.git
       - ./.githooks:/tmp/.githooks
