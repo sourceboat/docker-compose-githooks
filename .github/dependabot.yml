@@ -1,0 +1,13 @@
+version: 2
+updates:
+- package-ecosystem: docker
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "11:00"
+    timezone: Europe/Berlin
+  open-pull-requests-limit: 100
+  reviewers:
+  - pehbehbeh
+  assignees:
+  - pehbehbeh
